@@ -41,7 +41,9 @@ const fetchDataTabOne = async (model) => {
   };
   
   // Get the sever from the page name
-  const pageName = window.location.pathname.slice(0, -5).slice(1);
+  const pageName = window.location.pathname
+
+//   slice(0, -5).slice(1);
   
   sortingProductOptions(`${pageName}`, "cpu0", "cpu-0");
   sortingProductOptions(`${pageName}`, "cpu1", "cpu-1");
@@ -107,4 +109,5 @@ const fetchDataTabOne = async (model) => {
   
   // Make the formSubmit function available to the global scope
   window.formSubmit = formSubmit;
+  
   
